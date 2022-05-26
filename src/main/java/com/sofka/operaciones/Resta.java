@@ -1,4 +1,4 @@
-package operaciones;
+package com.sofka.operaciones;
 
 public class Resta {
     private double minuendo;

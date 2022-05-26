@@ -1,4 +1,4 @@
-package operaciones;
+package com.sofka.operaciones;
 
 public class Multiplicacion {
     private double multiplicando;
