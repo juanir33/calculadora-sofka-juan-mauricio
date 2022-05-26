@@ -25,5 +25,7 @@ public class Resta {
         this.sustraendo = sustraendo;
     }
 
-    public double resta(){return minuendo-sustraendo;}
+    public double resta() {
+        return minuendo - sustraendo;
+    }
 }
