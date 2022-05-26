@@ -28,5 +28,14 @@ public class Suma {
     public double suma() {
         return sumandoUno + sumandoDos;
     }
+    public int continuar(String confirm, int respue){
+
+
+        if (!confirm.equals("y")) {
+            respue = 0;
+        }
+
+        return respue;
+    }
 
 }

@@ -32,5 +32,14 @@ public class Division {
         }
         return String.valueOf(dividendo / divisor);
     }
+    public int continuar(String confirm, int respue){
+
+
+        if (!confirm.equals("y")) {
+            respue = 0;
+        }
+
+        return respue;
+    }
 
 }

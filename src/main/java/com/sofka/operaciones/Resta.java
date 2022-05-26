@@ -28,4 +28,13 @@ public class Resta {
     public double resta() {
         return minuendo - sustraendo;
     }
+    public int continuar(String confirm, int respue){
+
+
+        if (!confirm.equals("y")) {
+            respue = 0;
+        }
+
+        return respue;
+    }
 }
