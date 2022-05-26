@@ -1,4 +1,4 @@
-package operaciones;
+package com.sofka.operaciones;
 
 /**
  * Esta clase realiza la resta de dos números, siendo el primer número recibido menos el segundo número recibido

@@ -4,10 +4,10 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import operaciones.Resta;
-import operaciones.Suma;
-import operaciones.Multiplicacion;
-import operaciones.Division;
+import com.sofka.operaciones.Resta;
+import com.sofka.operaciones.Suma;
+import com.sofka.operaciones.Multiplicacion;
+import com.sofka.operaciones.Division;
 
 public class App {
 

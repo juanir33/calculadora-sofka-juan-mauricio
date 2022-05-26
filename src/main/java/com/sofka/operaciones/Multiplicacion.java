@@ -1,4 +1,4 @@
-package operaciones;
+package com.sofka.operaciones;
 
 /**
  * Esta clase realiza la multiplicación de dos números recibidos
