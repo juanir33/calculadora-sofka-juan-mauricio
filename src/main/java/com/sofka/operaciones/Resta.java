@@ -58,4 +58,5 @@ public class Resta {
     public double resta() {
         return minuendo - sustraendo;
     }
+
 }

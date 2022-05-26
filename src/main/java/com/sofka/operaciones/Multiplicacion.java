@@ -58,4 +58,5 @@ public class Multiplicacion {
     public double multiplicar() {
         return multiplicando * multiplicador;
     }
+
 }

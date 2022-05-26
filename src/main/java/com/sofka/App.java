@@ -8,8 +8,8 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class App {
 
+public class App {
 
 
     public static void main(String[] args) {
@@ -67,6 +67,7 @@ public class App {
                 }
                 default -> log.info("Ingrese una opcion");
             }
+
             log.info(MGSCONTINUAR);
             confirmacion = scanner.nextLine();
             if (!confirmacion.equals("y")) {
@@ -75,10 +76,7 @@ public class App {
             }
 
 
-
-
         } while (respuesta != 0);
-
 
 
     }
