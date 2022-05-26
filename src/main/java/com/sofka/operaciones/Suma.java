@@ -1,4 +1,4 @@
-package operaciones;
+package com.sofka.operaciones;
 
 
 /**

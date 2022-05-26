@@ -1,4 +1,4 @@
-package operaciones;
+package com.sofka.operaciones;
 
 /**
  * Esta clase realiza la division de dos números recibidos, siendo el primer numero recibido menos el segundo 

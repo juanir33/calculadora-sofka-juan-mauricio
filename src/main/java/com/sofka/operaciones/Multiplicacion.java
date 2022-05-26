@@ -1,4 +1,4 @@
-package operaciones;
+package com.sofka.operaciones;
 
 /**
  * Esta clase realiza la multiplicación de dos números recibidos
@@ -58,4 +58,5 @@ public class Multiplicacion {
     public double multiplicar() {
         return multiplicando * multiplicador;
     }
+
 }
