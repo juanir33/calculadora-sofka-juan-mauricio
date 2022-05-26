@@ -25,6 +25,8 @@ public class Suma {
         this.sumandoDos = sumandoDos;
     }
 
-    public double suma(){return sumandoUno+sumandoDos;}
+    public double suma() {
+        return sumandoUno + sumandoDos;
+    }
 
 }

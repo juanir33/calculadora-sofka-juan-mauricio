@@ -25,5 +25,7 @@ public class Multiplicacion {
         this.multiplicando = multiplicando;
     }
 
-    public double multiplicar(){return multiplicando*multiplicador;}
+    public double multiplicar() {
+        return multiplicando * multiplicador;
+    }
 }
