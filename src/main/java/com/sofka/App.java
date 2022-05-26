@@ -1,13 +1,12 @@
 package com.sofka;
 
-import operaciones.Resta;
-import operaciones.Suma;
-import operaciones.Multiplicacion;
-
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import operaciones.Resta;
+import operaciones.Suma;
+import operaciones.Multiplicacion;
 import operaciones.Division;
 
 public class App {
@@ -32,10 +31,10 @@ public class App {
             respuesta = Integer.valueOf(scanner.nextLine());
 
             log.info("Ingrese el primer número: ");
-            double primerNumero = Double.valueOf(scanner.nextLine());
+            double primerNumero = Double.parseDouble(scanner.nextLine());
 
             log.info("Ingrese el segundo número: ");
-            double segundoNumero = Double.valueOf(scanner.nextLine());
+            double segundoNumero = Double.parseDouble(scanner.nextLine());
 
             String resultado;
             String confirmacion;
@@ -47,13 +46,6 @@ public class App {
                     Suma suma = new Suma(primerNumero, segundoNumero);
                     resultado = String.valueOf(suma.suma());
                     log.log(Level.INFO, "El resultado es {0}", resultado);
-
-                    log.info("¿Desea continuar? (y/n)");
-                    confirmacion = scanner.nextLine();
-
-                    if (!confirmacion.equals("y")) {
-                        respuesta = 0;
-                    }
 
                     break;
 
@@ -102,12 +94,28 @@ public class App {
 
                     break;
 
+                    default:
+                    menu();
+                    break;
+
             }
+
+            scanner.close();
 
             log.info("\n\nGracias por usar esta fabulosa calculadora!\n");
 
         } while (respuesta != 0);
 
+    }
+
+    private static boolean confirmacion () {
+        Logger log = Logger.getLogger("imprimir");
+        Scanner scanner = new Scanner(System.in);
+
+        log.info("¿Desea continuar? (y/n)");
+        String confirmacion = scanner.nextLine();
+
+        return confirmacion.equals("y");
     }
 
 }
